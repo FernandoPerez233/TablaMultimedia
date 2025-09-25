@@ -6,11 +6,114 @@
     <title>Tabla multimedia</title>
 </head>
 
-<body>
+ <style>
 
-    <table>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+            color: black;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            overflow-x: auto;
+        }
+
+        h1{ 
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            font-size: 2em;
+            color: black;
+            font-family: Helvetica, sans-serif;
+            border-radius: 2.5em;
+
+        }
+
+        body{
+            background-color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        table{
+           width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header{
+            background-color: #343a40;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        td{
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+        }
+
+         td:first-child {
+            background-color: #f1f2f3;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+         iframe {
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            max-width: 100%;
+            height: 300px;
+            width: 350px;
+        }
+        
+
+        .border{
+            border: 1px solid #000;
+            background-color: #000;
+            background-size: .05px;
+        }
+
+        tfoot{
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1.5em;
+            color: black;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+<body>
+    <h1>
+        Tabla multimedia
+    </h1>
+    <br>
+
+    <div>
+        <table>
         <thead>
-            <tr>
+            <tr class="header">
+                <th>Categoria</th>
                 <th>Video de youtube</th>
                 <th>Video de Facebook</th>
                 <th>Video propio</th>
@@ -18,38 +121,54 @@
             </tr>
         </thead>
         <tbody>
+
         <!-- Deportes -->
             <tr>
+                <td>DEPORTES</td>
                 <td>
                     <iframe width="360" height="315" src="https://www.youtube.com/embed/xxGIdAmJn1s?si=3UigB9IYrs1mY0K3" title="Monterrey 4-2 Santos | Liga Mx - CL2025 J10 | Resumen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </td>
                 <td>
-                    <iframe width="360" height="315" src="https://www.youtube.com/embed/bF0Ldivzy8s?si=2cBiSzybTJZbGedH" title="América 2 (2) - (4) 1 Monterrey | Final Vuelta - Liga MX AP 19 | Resumen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fangela.carranza.5015%2Fvideos%2F1938418220276336%2F&show_text=false&width=267&t=0" width="267" height="360" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
                 </td>
                 <td>
-                    <iframe width="360" height="315" src="https://www.youtube.com/embed/bF0Ldivzy8s?si=2cBiSzybTJZbGedH" title="América 2 (2) - (4) 1 Monterrey | Final Vuelta - Liga MX AP 19 | Resumen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/TdfG7ZN03ao?si=6ydvqw8I-bSNA_Dy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </td>
                 <td>
-                    <iframe width="360" height="315" src="https://www.youtube.com/embed/bF0Ldivzy8s?si=2cBiSzybTJZbGedH" title="América 2 (2) - (4) 1 Monterrey | Final Vuelta - Liga MX AP 19 | Resumen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <img src="img/yo.png" alt="jugando futbol" width="360" height="340">
                 </td>
+                
             </tr>
+            <br>
             <!-- videojuegos -->
             <tr>
+                <td>VIDEOJUEGOS</td>
+                <td><iframe width="360" height="315" src="https://www.youtube.com/embed/xN8ENrfE-TY?si=7_Fl4qVxdF28Lppe" title="YouTube video player" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                
+                <td><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100069972055911%2Fvideos%2F738460672383217%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></td>
 
+                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/gumeAIFi6c0?si=RNy5IlJnIYOZo3fy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><img src="img/videojuegos.png" alt="jugandovideojuegos" width="360" height="340"></td>
+                
             </tr>
+            <br>
              <!-- Cocina -->
             <tr>
-                <td>
-                    <iframe width="360" height="315" src="https://www.youtube.com/embed/2_Aqm0TRFs4?si=tyFOvh6wlL-0Wshn" title="Video de cocina01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </td>
+                <td>COCINA</td>
+                <td><iframe width="360" height="315" src="https://www.youtube.com/embed/LUsfdJ6Y9kM?si=MV0Jd5AhgQkd4edr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fyuliza.anayaaviles%2Fvideos%2F1389678442104283%2F&show_text=false&width=267&t=0" width="367" height="376" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></td>
+                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/W37L7MaUGRQ?si=qSsA7BwhG6cEbL5F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><img src="img/Gemini_Generated_Image_nsn72rnsn72rnsn7.png" alt="cocina" width="350" height="340"></td>
             </tr>
             </tbody>
         <tfoot>
-            <tr>
-                <td> Fernando Pérez</td>
-            </tr>
+                <td colspan="5"> ©Fernando Pérez - Tabla Multimedia 2025 - IDAI  :p</td>
+            
         </tfoot>
     </table>
+    </div>
 
 </body>
 </html>
